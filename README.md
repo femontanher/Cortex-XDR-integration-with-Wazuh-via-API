@@ -160,12 +160,6 @@ Or using pip3 directly:
 pip3 install requests
 ```
 
-Alternatively, install from `requirements.txt`:
-
-```bash
-pip3 install -r /opt/cortex_collector/requirements.txt
-```
-
 ### 5. Configure the collector
 
 Edit `config.py` inside `/opt/cortex_collector/` and fill in your environment values:
@@ -182,8 +176,6 @@ POLL_INTERVAL = 60          # seconds between each poll
 PAGE_SIZE     = 100         # alerts per API request
 STATE_FILE    = "/var/lib/cortex_xdr/state.json"
 ```
-
-> ⚠️ **Never commit `config.py` with real credentials to a public repository.** Add it to `.gitignore` and use environment variables or a secrets manager in production environments.
 
 ### 6. Deploy the systemd service
 
