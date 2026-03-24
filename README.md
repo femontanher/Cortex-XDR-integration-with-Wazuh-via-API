@@ -41,8 +41,8 @@ Key design goals:
 ## Architecture
 
 ```
-┌─────────────────────┐        HTTPS / REST        ┌──────────────────────┐
-│   Cortex XDR SaaS   │ ◄──────────────────────── │   collector.py       │
+┌─────────────────────┐        HTTPS / REST         ┌──────────────────────┐
+│   Cortex XDR SaaS   │ ◄────────────────────────── │   collector.py       │
 │   (Palo Alto API)   │ ──────────── alerts ──────► │   (Python service)   │
 └─────────────────────┘                             └──────────┬───────────┘
                                                                │
